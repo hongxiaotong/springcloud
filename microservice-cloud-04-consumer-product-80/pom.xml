@@ -18,6 +18,11 @@
             <artifactId>microservice-cloud-02-api</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!-- Ribbon 相关依赖,eureka会自动引入Ribbon -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

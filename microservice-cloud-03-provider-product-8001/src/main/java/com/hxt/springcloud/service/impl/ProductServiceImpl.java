@@ -1,6 +1,7 @@
 package com.hxt.springcloud.service.impl;
 
 import com.hxt.springcloud.entities.Product;
+
 import com.hxt.springcloud.mapper.ProductMapper;
 import com.hxt.springcloud.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
