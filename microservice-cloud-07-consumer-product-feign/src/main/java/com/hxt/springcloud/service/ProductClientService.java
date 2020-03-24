@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@FeignClient(value = "microservice-product")
+@FeignClient(value = "microservice-product", fallback = ProductClientServiceFallBack.class)
 public interface ProductClientService {
     @RequestMapping(value = "/product/get/{id}", method = RequestMethod.GET)
     Product get(@PathVariable("id") Long id);
